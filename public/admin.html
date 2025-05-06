@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - PlayStation Legacy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/admin.js"></script>
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <!-- Product Form -->
+  <section>
+    <h2>Add / Edit Product</h2>
+    <!-- Inside the form section -->
+<form id="product-form">
+    <input type="hidden" id="product-id">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="description" placeholder="Description" required>
+    <input type="number" id="price" placeholder="Price" step="0.01" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="text" id="image" placeholder="Image URL" required>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+    <button type="submit">Save Product</button>
+  </form>
+  
+  </section>
+
+  <!-- Product List -->
+  <section>
+    <h2>All Products</h2>
+    <ul id="product-list"></ul>
+  </section>
+
+  <!-- Bulk Upload -->
+  <section>
+    <h2>Bulk Upload JSON</h2>
+    <textarea id="bulk-json" rows="5" cols="50" placeholder='[{"title": "...", "description": "..."}]'></textarea>
+    <br>
+    <button id="bulk-upload">Upload</button>
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
