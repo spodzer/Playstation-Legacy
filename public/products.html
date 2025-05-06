@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse PlayStation Games | PlayStation Legacy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/products.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navigation">
+    <a href="index.html" class="logo">
+      <img src="images/spinningplaystation.gif" alt="Logo" />
+    </a>
+    <nav>
+      <a href="cart.html">Cart</a>
+      <a href="placeholder.html" id="auth-link">Sign In</a>
+    </nav>
+  </header>
+
+  <!-- Search + Category -->
+  <div class="search">
+    <input type="text" placeholder="Search for a game..." id="search-input">
+    <select id="category-select">
+      <option value="">All Categories</option>
+      <option value="RPG">RPG</option>
+      <option value="Action">Action</option>
+      <option value="Adventure">Adventure</option>
+      <option value="Shooter">Shooter</option>
+    </select>
+  </div>
+
+  <!-- Product List -->
+  <main>
+    <section id="product-list" class="product-grid">
+      <!-- Products will be inserted here by products.js -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 PlayStation Legacy. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

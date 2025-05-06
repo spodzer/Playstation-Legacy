@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart | PlayStation Legacy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="js/cart.js"></script>
+</head>
+<body>
+
+  <header class="navigation">
+    <a href="index.html" class="logo">
+      <img src="images/spinningplaystation.gif" alt="Logo" />
+    </a>
+    <nav>
+      <a href="products.html">Catalog</a>
+    </nav>
+  </header>
+
+  <main class="cart-container">
+    <h1>Your Cart</h1>
+    <section id="cart-items">
+      <!-- Cart items go here -->
+    </section>
+    <div id="cart-summary">
+      <h2>Total: $<span id="cart-total">0.00</span></h2>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <main>
+    <section id="product-list" class="product-grid">
+      <!-- Products will be inserted here by products.js -->
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 PlayStation Legacy. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
